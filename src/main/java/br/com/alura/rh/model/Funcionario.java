@@ -22,14 +22,11 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public void reajustarSalario (BigDecimal aumento){
-        BigDecimal percentualReajuste = aumento.divide(salario, RoundingMode.HALF_UP);
-        if (percentualReajuste.compareTo(new BigDecimal("0.4")) >0){
-            throw new ValidacaoException("O aumento deve ser de no máximo 40%");
-        }
-        this.salario = this.salario.add(aumento);
+    public void atualizarSalario (BigDecimal novoSalario) {
+        this.salario = novoSalario;
         this.dataUltimoReajuste = LocalDate.now();
     }
+
 
     public String getNome() {
         return nome;
