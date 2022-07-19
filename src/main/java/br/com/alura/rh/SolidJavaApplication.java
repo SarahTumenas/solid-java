@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SolidjavaApplication {
+public class SolidJavaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SolidjavaApplication.class, args);
+		SpringApplication.run(SolidJavaApplication.class, args);
 	}
 
 }
